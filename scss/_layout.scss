@@ -1,0 +1,31 @@
+@use "base" as *;
+
+
+.start-nav, .login-nav, .overzicht-nav, .detail-nav{
+  padding: 20px 20px ;
+}
+
+.start-header{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  color: $color-black;
+
+  .header-banner{
+    @include centerText;
+    text-align: center;
+    margin-top: 25%;
+  }
+
+}
+
+.overzicht-lijst{
+  .overzicht-items{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+
+

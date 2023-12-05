@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+$color-light: #f9F9F9;
+$color-black: #000;
+$color-grey: #565656;
+$color-primary: #3b83bd;
+$color-secondary: #bbb;
+
+$font-pixelify: 'Pixelify sans', sans-serif ;
+$font-josefinSans: 'Josefin Sans', sans-serif;
+$font-nunito: 'Nunito', sans-serif;
+
+@mixin flexLayout{
+  display: flex;
+  horiz-align: center;
+  vertical-align: center;
+}
+@mixin textStyles{
+  $font-weight-value: 300;
+  letter-spacing: 2px;
+  font-variant: all-small-caps;
+  text-align: center;
+
+}
+@mixin centerText{
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+}
+@mixin navbarStyle{
+  .nav-components{
+    li{
+      margin:10px 30px ;
+      justify-content: space-evenly;
+      .logo{
+        color: $color-primary;
+
+      }
+      .logo:hover{
+         background-color: transparent;
+       }
+      a{
+        text-decoration: none;
+        width: 20px;
+        height: auto;
+        padding: 10px;
+        color: $color-light;
+      }
+      a:hover{
+        color: $color-primary;
+        background-color: $color-secondary;
+        border-radius: 2px;
+        transition: all .4s;
+
+      }
+    }
+    display: flex;
+    flex-direction: row;
+    color: $color-light;
+    list-style-type: none;
+    font-family: $font-nunito;
+  }
+}
+@mixin fontStyle{
+  font-family: "Josefin Sans", sans-serif;
+  color: #3b83bd;
+  font-size: large;
+  padding: 5%;
+}
+@mixin itemOverlay{
+  width: 150px;
+  height: 40px;
+  color: $color-primary;
+  background-color: $color-light;
+  font-family: $font-josefinSans;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid $color-primary;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+@mixin overlay{
+  position: absolute;
+  top: 40%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color-primary, 0.5);
+  color: $color-light;
+}

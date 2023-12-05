@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.start-nav .nav-components, .login-nav .nav-components, .overzicht-nav .nav-components, .detail-nav .nav-components {
+  display: flex;
+  flex-direction: row;
+  color: #f9F9F9;
+  list-style-type: none;
+  font-family: "Nunito", sans-serif;
+}
+.start-nav .nav-components li, .login-nav .nav-components li, .overzicht-nav .nav-components li, .detail-nav .nav-components li {
+  margin: 10px 30px;
+}
+.start-nav .nav-components li .logo, .login-nav .nav-components li .logo, .overzicht-nav .nav-components li .logo, .detail-nav .nav-components li .logo {
+  color: #3b83bd;
+}
+.start-nav .nav-components li a, .login-nav .nav-components li a, .overzicht-nav .nav-components li a, .detail-nav .nav-components li a {
+  text-decoration: none;
+  width: 20px;
+  height: auto;
+  padding: 10px;
+  color: #f9F9F9;
+}
+.start-nav .nav-components li a:hover, .login-nav .nav-components li a:hover, .overzicht-nav .nav-components li a:hover, .detail-nav .nav-components li a:hover {
+  color: #3b83bd;
+  background-color: #bbb;
+  border-radius: 2px;
+  transition: all 0.4s;
+}
+
+.start-body {
+  background: linear-gradient(rgba(86, 86, 86, 0.4), rgba(86, 86, 86, 0.6), rgba(86, 86, 86, 0.8), #565656), url("../assets/phone-bg.jpeg");
+  background-size: cover;
+}
+.start-body .start-header .logo {
+  display: flex;
+  horiz-align: center;
+  vertical-align: center;
+  font-size: 70px;
+  color: #3b83bd;
+  text-decoration: none;
+}
+.start-body .start-header .header-banner {
+  margin-top: 15%;
+}
+.start-body .start-header .header-name {
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  color: #f9F9F9;
+}
+.start-body .start-header .sub-name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #bbb;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.start-body .start-header .main-heading {
+  font-family: "Pixelify sans", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  color: #3b83bd;
+  margin: 30px 0;
+}
+.start-body .start-header .sub-heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #bbb;
+  margin-bottom: 50px;
+}
+.start-body .start-header .header-button {
+  width: 200px;
+  height: 75px;
+  font-family: "Josefin Sans", sans-serif;
+  font-variant: all-small-caps;
+  letter-spacing: 1px;
+  color: #f9F9F9;
+  background-color: transparent;
+  border: 1px solid #bbb;
+  outline: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.start-body .start-header .header-button:hover {
+  background-color: #3b83bd;
+  color: #f9F9F9;
+  border: 1px solid #3b83bd;
+  border-radius: 2px;
+  transition: all 0.4s;
+}
+.start-body .start-header .product-main {
+  margin: 10% 0;
+  font-family: "Josefin Sans", sans-serif;
+  color: #f9F9F9;
+  font-weight: normal;
+}
+.start-body .start-header .arrow-down {
+  color: #3b83bd;
+  letter-spacing: 2px;
+  font-variant: all-small-caps;
+  text-align: center;
+  horiz-align: center;
+  font-size: x-large;
+}
+
+.start-main {
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.start-main .product {
+  letter-spacing: 2px;
+  font-variant: all-small-caps;
+  text-align: center;
+}
+.start-main .product-name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: x-large;
+  font-weight: 700;
+  color: #f9F9F9;
+}
+.start-main .product-pro {
+  width: 40%;
+  height: auto;
+  padding: 20px;
+}
+.start-main .product-price {
+  color: #f9F9F9;
+  font-family: "Nunito", sans-serif;
+  font-size: x-large;
+}
+.start-main .product-price span {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+.overzicht-body {
+  background: linear-gradient(rgba(86, 86, 86, 0.8), rgba(249, 249, 249, 0.6)), url("../assets/iphone-bg-2.jpeg");
+  background-size: cover;
+}
+.overzicht-body .overzicht-main .top-overzicht-main {
+  display: flex;
+  horiz-align: center;
+  vertical-align: center;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  margin: 5% 0;
+}
+.overzicht-body .overzicht-main .top-overzicht-main .top-overzicht-titel {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+  color: #3b83bd;
+}
+.overzicht-body .overzicht-main .top-overzicht-main .top-overzicht-text {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  color: #f9F9F9;
+  font-variant: all-small-caps;
+}
+.overzicht-body .overzicht-main .top-overzicht-main .filters {
+  display: flex;
+  horiz-align: center;
+  vertical-align: center;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+.overzicht-body .overzicht-main .top-overzicht-main .filters .filter-item .filter {
+  border: none;
+}
+.overzicht-body .overzicht-main .top-overzicht-main .filters .filter-item legend {
+  font-family: "Josefin Sans", sans-serif;
+  color: #3b83bd;
+  font-size: x-large;
+}
+.overzicht-body .overzicht-main .top-overzicht-main .filters .filter-item .filter-text {
+  font-family: "Nunito", sans-serif;
+  color: #f9F9F9;
+}
+.overzicht-body .overzicht-main .overzicht-lijst {
+  margin-top: 25%;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item {
+  width: 33.33%;
+  height: 25vw;
+  position: relative;
+  overflow: hidden;
+  padding: 5% 0;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px 0 5px 0;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-overlay {
+  position: absolute;
+  top: 40%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(59, 131, 189, 0.5);
+  color: #f9F9F9;
+  display: flex;
+  horiz-align: center;
+  vertical-align: center;
+  flex-direction: column;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-overlay .product-price {
+  color: #f9F9F9;
+  letter-spacing: 2px;
+  font-variant: all-small-caps;
+  text-align: center;
+  font-size: x-large;
+  font-family: "Nunito", sans-serif;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-overlay .product-price span {
+  color: red;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-overlay .item-overlay-titel {
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-variant: all-small-caps;
+  text-align: center;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-overlay .item-overlay-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-variant: all-small-caps;
+  text-align: center;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-overlay .item-overlay-button {
+  width: 150px;
+  height: 40px;
+  color: #3b83bd;
+  background-color: #f9F9F9;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #3b83bd;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-overlay .item-overlay-button .detail-link {
+  text-decoration: none;
+  color: #3b83bd;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-overlay .item-overlay-button .detail-link:hover {
+  color: #bbb;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item:hover .item-overlay {
+  left: 0;
+  transition: left 0.7s;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .paginatie {
+  display: flex;
+  horiz-align: center;
+  vertical-align: center;
+  justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: #3b83bd;
+  font-size: large;
+  padding: 5%;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .paginatie span {
+  text-decoration: underline;
+}
+
+.detail-body {
+  background: linear-gradient(rgba(86, 86, 86, 0.4), rgba(249, 249, 249, 0.2)), url("../assets/iphone-bg-2.jpeg");
+  background-size: cover;
+}
+.detail-body .detail-main {
+  width: 100%;
+  height: 40%;
+  margin: 0 auto;
+}
+.detail-body .detail-main .detail-iphone {
+  display: flex;
+  horiz-align: center;
+  vertical-align: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: rgba(187, 187, 187, 0.9);
+  justify-content: center;
+}
+.detail-body .detail-main .detail-iphone .detail-img-small {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.detail-body .detail-main .detail-iphone .detail-img-small img {
+  scale: 70%;
+}
+.detail-body .detail-main .detail-iphone .detail-img-big {
+  display: flex;
+  justify-content: center;
+  height: 30%;
+}
+.detail-body .detail-main .detail-iphone .detail-img-big img {
+  scale: 50%;
+}
+.detail-body .detail-main .detail-iphone .detail-specificaties {
+  display: flex;
+  margin: auto 0;
+}
+.detail-body .detail-main .detail-iphone .detail-specificaties .detail-list {
+  font-family: "Josefin Sans", sans-serif;
+  word-spacing: 2px;
+}
+.detail-body .detail-main .detail-iphone .detail-specificaties .detail-list .detail-list-item {
+  list-style-type: none;
+  margin-bottom: 3%;
+}
+.detail-body .detail-main .detail-iphone .detail-specificaties .detail-list .detail-list-item h1 {
+  color: #3b83bd;
+}
+.detail-body .detail-main .detail-iphone .detail-specificaties .detail-list .detail-list-item-listed {
+  margin-bottom: 3%;
+}
+
+.login-body {
+  background: linear-gradient(rgba(86, 86, 86, 0.4), rgba(86, 86, 86, 0.6), rgba(86, 86, 86, 0.8), #565656), url("../assets/phone-bg.jpeg");
+  background-size: cover;
+  height: 100%;
+}
+.login-body .login-main .login-profile {
+  display: flex;
+  justify-content: center;
+}
+.login-body .login-main .login-profile .login-gegevens {
+  padding: 8%;
+  background-color: rgba(86, 86, 86, 0.9);
+  border-radius: 30px;
+}
+.login-body .login-main .login-profile .login-gegevens .login-title {
+  font-family: "Josefin Sans", sans-serif;
+  color: #3b83bd;
+  font-size: xx-large;
+  margin-bottom: 2%;
+  margin-top: 10%;
+  align-items: center;
+}
+.login-body .login-main .login-profile .login-gegevens .login-text {
+  font-family: "Nunito", sans-serif;
+  color: #f9F9F9;
+  display: flex;
+  horiz-align: center;
+  vertical-align: center;
+  flex-direction: column;
+  padding-bottom: 20%;
+}
+.login-body .login-main .login-profile .login-gegevens .login-text #user-name, .login-body .login-main .login-profile .login-gegevens .login-text #password, .login-body .login-main .login-profile .login-gegevens .login-text #e-mail-confirm {
+  width: 50%;
+  margin-bottom: 5%;
+}
+.login-body .login-main .login-profile .login-gegevens .login-text .submit {
+  font-family: "Nunito", sans-serif;
+  color: #3b83bd;
+  background-color: #f9F9F9;
+  width: 20%;
+  border: none;
+  padding: 2% 0;
+}
+
+.start-footer {
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.start-footer .start-gegevenslijst, .start-footer .start-adres {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: large;
+  list-style-type: none;
+  letter-spacing: 2px;
+  font-variant: all-small-caps;
+  text-align: center;
+  color: #f9F9F9;
+}
+
+@media screen and (min-width: 413px) and (max-width: 415px) {
+  .start-body {
+    background: none;
+  }
+  .start-body .start-header .header-banner {
+    margin-top: 2%;
+  }
+  .login-body {
+    background: none;
+  }
+}
+.start-nav, .login-nav, .overzicht-nav, .detail-nav {
+  padding: 20px 20px;
+}
+
+.start-header {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  color: #000;
+}
+.start-header .header-banner {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 25%;
+}
+
+.overzicht-lijst .overzicht-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=main.css.map */

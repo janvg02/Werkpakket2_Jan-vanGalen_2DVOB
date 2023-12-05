@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Producten</title>
+    <!-- Link voor css -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Link voor icons -->
+    <script src="https://kit.fontawesome.com/3e2da0ee3d.js" crossorigin="anonymous"></script>
+    <!-- Link voor Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Pixelify+Sans:400|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700" rel="stylesheet">
+
+</head>
+<body class="overzicht-body">
+<nav class="overzicht-nav">
+    <ul class="nav-components">
+        <li><a href="startpagina.html" class="logo"><i class="fa-solid fa-mobile fa-2xl"></i> </a></li>
+        <li><a href="startpagina.html" class="home">Home</a></li>
+        <li><a href="#">Assortiment</a></li>
+        <li><a href="login.html">Log in</a></li>
+    </ul>
+</nav>
+<main class="overzicht-main">
+    <div class="top-overzicht-main">
+        <h1 class="top-overzicht-titel">Ons assortiment</h1>
+        <p class="top-overzicht-text">Telefoons van hoge kwaliteit</p>
+        <div class="filters">
+        <div class="filter-item">
+            <fieldset class="filter">
+                <legend>Prijsklasse</legend>
+                <div class="filter-text">
+                    <input type="checkbox" id="cheap" name="cheap" checked />
+                    <label for="cheap">529.99 - 749.99</label>
+                </div>
+
+                <div class="filter-text">
+                    <input type="checkbox" id="expensive" name="expensive" />
+                    <label for="expensive">> 749.99</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="filter-item">
+            <fieldset class="filter">
+                <legend>Opslag</legend>
+                <div class="filter-text">
+                    <input type="checkbox" id="64" name="64" checked />
+                    <label for="64">64gb</label>
+                </div>
+
+                <div class="filter-text">
+                    <input type="checkbox" id="128" name="128" />
+                    <label for="128">128gb</label>
+                </div>
+                <div class="filter-text">
+                    <input type="checkbox" id="256" name="256" />
+                    <label for="256">256gb</label>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    </div>
+    <section class="overzicht-lijst">
+        <div class="overzicht-items">
+            <div class="item">
+                <div class="item-overlay">
+                    <h1 class="item-overlay-titel">Iphone 15</h1>
+                    <p class="item-overlay-text">Apple</p>
+                    <p class="item-overlay-text">256gb</p>
+                    <button class="item-overlay-button"><a class="detail-link" href="detailpagina.html">Details</a></button>
+                    <p class="product-price"><span class="price-sale">€749</span><br>€999 </p>
+                </div>
+                <img src="assets/iphone-15.webp" alt="15 " class="item-image">
+            </div>
+
+            <div class="item">
+                <div class="item-overlay">
+                    <h1 class="item-overlay-titel">Iphone 15 plus</h1>
+                    <p class="item-overlay-text">Apple</p>
+                    <p class="item-overlay-text">256gb</p>
+                    <button class="item-overlay-button">Details</button>
+                    <p class="product-price"><span class="price-sale">€999 </span><br>€1.299</p>
+                </div>
+                <img src="assets/iphone-15-plus.webp" alt="15 " class="item-image">
+            </div>
+
+            <div class="item">
+                <div class="item-overlay">
+                    <h1 class="item-overlay-titel">Iphone 14</h1>
+                    <p class="item-overlay-text">Apple</p>
+                    <p class="item-overlay-text">256gb</p>
+                    <button class="item-overlay-button">Details</button>
+                    <p class="product-price">€749</p>
+                </div>
+                <img src="assets/iphone-14.webp" alt="15 " class="item-image">
+            </div>
+
+            <div class="item">
+                <div class="item-overlay">
+                    <h1 class="item-overlay-titel">Iphone 13 mini</h1>
+                    <p class="item-overlay-text">Apple</p>
+                    <p class="item-overlay-text">128gb</p>
+                    <button class="item-overlay-button">Details</button>
+                    <p class="product-price">€529</p>
+
+                </div>
+                <img src="assets/iphone-13-mini.webp" alt="15 " class="item-image">
+            </div>
+
+            <div class="item">
+                <div class="item-overlay">
+                    <h1 class="item-overlay-titel">Iphone 12</h1>
+                    <p class="item-overlay-text">Apple</p>
+                    <p class="item-overlay-text">64gb</p>
+                    <button class="item-overlay-button">Details</button>
+                    <p class="product-price">€529</p>
+
+                </div>
+                <img src="assets/iphone-12.webp" alt="15 " class="item-image">
+            </div>
+
+            <div class="item">
+                <div class="item-overlay">
+                    <h1 class="item-overlay-titel">Iphone 12 mini</h1>
+                    <p class="item-overlay-text">Apple</p>
+                    <p class="item-overlay-text">256gb</p>
+                    <button class="item-overlay-button">Details</button>
+                    <p class="product-price">€679.99</p>
+
+                </div>
+                <img src="assets/iphone-12-mini.webp" alt="15 " class="item-image">
+            </div>
+
+        </div>
+        <div class="paginatie">
+        <h3><< <span>1</span> 2 3 4 5 ... >></h3>
+    </div>
+    </section>
+</main>
+<footer class="start-footer">
+    <ul class="start-gegevenslijst">
+        <li class="start-gegeven">Jan van Galen</li>
+        <li class="start-gegeven">janvg02@gmail.com</li>
+        <li class="start-gegeven">PhoneLab</li>
+    </ul>
+    <ul class="start-adres">
+        <li class="start-adres">Elfde-liniestraat 22</li>
+        <li class="start-adres">3500</li>
+        <li class="start-adres">Hasselt</li>
+    </ul>
+</footer>
+</body>
+</html>

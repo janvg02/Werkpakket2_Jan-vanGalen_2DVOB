@@ -1,10 +1,10 @@
 <script setup>
-import HeaderComponent from "@/components/HeaderComponent.vue";
+import NavComponent from "@/components/NavComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
 </script>
 
 <template>
-<HeaderComponent/>
+<NavComponent/>
   <header class="start-header">
     <div class="header-banner">
       <h1 class="header-name">PhoneLab</h1>

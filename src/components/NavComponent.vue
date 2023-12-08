@@ -14,11 +14,11 @@ export default {
         },
         {
           path: "/",
-          name:"Cart"
+          name:"Log in"
         },
         {
           path: "/",
-          name:"Log in"
+          name:"Cart"
         },
       ]
     }

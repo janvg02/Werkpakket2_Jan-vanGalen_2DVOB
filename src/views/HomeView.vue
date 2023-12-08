@@ -45,14 +45,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <section class="gallery">
-    <div class="cards-wrapper">
-      <CardComponent v-for="product in products"
-                     v-bind:key="product.id"
-                     v-bind:product="product"
-      />
-    </div>
-  </section>
+
 </template>
 
 <style scoped>

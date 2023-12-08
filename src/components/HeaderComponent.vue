@@ -59,6 +59,7 @@ export default {
         color: #2c3e50;
         background-color: #3b83bd;
         transition: all .4s;
+        border-radius: 2px;
 
       }
     }

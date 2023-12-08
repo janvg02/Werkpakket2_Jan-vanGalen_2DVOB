@@ -15,7 +15,7 @@
 
 //HEADER_MAIN//
 .start-body {
-  background: linear-gradient(rgba($color-grey, 0.4), rgba($color-grey, 0.6), rgba($color-grey, 0.8), rgba($color-grey, 1.0)), url("../assets/phone-bg.jpeg");
+  background: linear-gradient(rgba($color-grey, 0.4), rgba($color-grey, 0.6), rgba($color-grey, 0.8), rgba($color-grey, 1.0)), url("src/assets/phone-bg.jpeg");
   background-size: cover;
   .start-header {
     .logo {
@@ -135,7 +135,7 @@
 //OVERZICHT_MAIN
 
 .overzicht-body{
-  background: linear-gradient(rgba($color-grey, 0.8), rgba($color-light, 0.6)), url("../assets/iphone-bg-2.jpeg");
+  background: linear-gradient(rgba($color-grey, 0.8), rgba($color-light, 0.6)), url("src/assets/iphone-bg-2.jpeg");
   background-size: cover;
   .overzicht-main{
     .top-overzicht-main{
@@ -255,7 +255,7 @@
 
 .detail{
 &-body{
-  background: linear-gradient(rgba($color-grey, 0.4), rgba($color-light, 0.2)), url("../assets/iphone-bg-2.jpeg");
+  background: linear-gradient(rgba($color-grey, 0.4), rgba($color-light, 0.2)), url("src/assets/iphone-bg-2.jpeg");
   background-size: cover;
   .detail{
   &-main{
@@ -315,7 +315,7 @@
 
 .login{
 &-body{
-  background: linear-gradient(rgba($color-grey, 0.4), rgba($color-grey, 0.6), rgba($color-grey, 0.8),rgba($color-grey, 1.0)), url("../assets/phone-bg.jpeg");
+  background: linear-gradient(rgba($color-grey, 0.4), rgba($color-grey, 0.6), rgba($color-grey, 0.8),rgba($color-grey, 1.0)), url("src/assets/phone-bg.jpeg");
   background-size: cover;
   height: 100%;
   .login-main{

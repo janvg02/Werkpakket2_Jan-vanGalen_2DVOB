@@ -5,11 +5,11 @@ export default {
 
       navItems: [
         {
-          path: "./index.html",
+          path: "/",
           name:"Home"
         },
         {
-          path: "./overzicht.html",
+          path: "/",
           name:"Products"
         },
         {
@@ -50,17 +50,17 @@ export default {
     .nav-list-item{
       list-style-type: none;
       .nav-list-link{
+        font-size: large;
         color: #3b83bd;
         text-decoration: none;
         padding: 10px;
+        transition: all .4s ease-in-out;
 
       }
       .nav-list-link:hover{
         color: #2c3e50;
         background-color: #3b83bd;
-        transition: all .4s;
-        border-radius: 2px;
-
+        border-radius: 5px;
       }
     }
 

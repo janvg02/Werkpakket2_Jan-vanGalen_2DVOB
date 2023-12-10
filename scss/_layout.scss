@@ -1,10 +1,5 @@
 @use "base" as *;
 
-
-.start-nav, .login-nav, .overzicht-nav, .detail-nav{
-  padding: 20px 20px ;
-}
-
 .start-header{
   width: 100%;
   height: 100vh;
@@ -19,13 +14,9 @@
   }
 
 }
-
-.overzicht-lijst{
-  .overzicht-items{
+.overzicht-items{
     display: flex;
     flex-wrap: wrap;
-  }
-
 }
 
 

@@ -4,7 +4,6 @@ import HeaderComponent from "@/components/HeaderComponent.vue";
 import HomeView from "@/views/HomeView.vue";
 import CardComponent from "@/components/CardComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
-
 export default {
   data() {
 
@@ -14,15 +13,18 @@ export default {
       NavComponent,
       HeaderComponent,
       FooterComponent,
-      CardComponent
+      CardComponent,
   }
 }
 </script>
 
 <template>
 <NavComponent/>
-  <HeaderComponent/>
-<router-view><HomeView/></router-view>
+
+  <router-view>
+    <HomeView/>
+  </router-view>
+
   <FooterComponent/>
 </template>
 

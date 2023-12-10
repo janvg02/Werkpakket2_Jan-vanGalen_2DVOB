@@ -2,22 +2,21 @@
 export default {
   data() {
     return {
-
       navItems: [
         {
           path: "/",
           name:"Home"
         },
         {
-          path: "/",
+          path: "/Products",
           name:"Products"
         },
         {
-          path: "/",
-          name:"Log in"
+          path: "/Login",
+          name:"Log in",
         },
         {
-          path: "/",
+          path: "/Cart",
           name:"Cart"
         },
       ]
@@ -32,7 +31,7 @@ export default {
         <ul class="nav-list">
           <li v-for="navItem in navItems"
               class="nav-list-item">
-            <a href="#" class="nav-list-link">{{ navItem.name }}</a>
+            <a :href="navItem.path" class="router-link-exact-active nav-list-link">{{ navItem.name }}</a>
           </li>
         </ul>
       </div>

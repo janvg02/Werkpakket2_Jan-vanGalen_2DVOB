@@ -1,8 +1,11 @@
 <script>
 import {defineComponent} from "vue";
 import CardComponent from "@/components/CardComponent.vue";
+import HeaderComponent from "@/components/HeaderComponent.vue";
+import NavComponent from "@/components/NavComponent.vue";
+import FooterComponent from "@/components/FooterComponent.vue";
 export default defineComponent({
-  components: {CardComponent},
+  components: {CardComponent, HeaderComponent, NavComponent, FooterComponent},
   data() {
     return {
       products: [
@@ -45,7 +48,11 @@ export default defineComponent({
 </script>
 
 <template>
-
+  <HeaderComponent/>
+      <CardComponent v-for="product in products"
+                     v-bind:key="product.id"
+                     v-bind:product="product"
+      />
 </template>
 
 <style scoped>

@@ -31,7 +31,7 @@ export default {
         <ul class="nav-list">
           <li v-for="navItem in navItems"
               class="nav-list-item">
-            <a :href="navItem.path" class="router-link-exact-active nav-list-link">{{ navItem.name }}</a>
+              <router-link :to="navItem.path" class="router-link-exact-active nav-list-link">{{navItem.name}}</router-link>
           </li>
         </ul>
       </div>

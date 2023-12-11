@@ -1,14 +1,10 @@
 <script>
-import navComponent from "@/components/NavComponent.vue";
-import FooterComponent from "@/components/FooterComponent.vue";
 
 export default {
-  components: {navComponent, FooterComponent},
 }
 </script>
 
 <template>
-  <navComponent/>
   <main class="login-main">
     <div class="login-profile">
       <form class="login-gegevens">
@@ -27,7 +23,6 @@ export default {
       </form>
     </div>
   </main>
-  <FooterComponent/>
 </template>
 
 <style scoped>

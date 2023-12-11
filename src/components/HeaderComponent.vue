@@ -20,7 +20,7 @@ export default {
       <p class="sub-name">{{ subTitle }}</p>
       <h1 class="main-heading">{{ HeadingTitle }}</h1>
       <h3 class="sub-heading">{{HeadingText}}</h3>
-      <a href="overzicht.html"> <button class="header-button" >{{ButtonText}}</button></a>
+      <router-link to="/Products"><button class="header-button" >{{ButtonText}}</button></router-link>
       <h2 class="product-main">{{ProductTitle}}</h2>
       <a class="arrow-down"> <i class="fa-solid fa-angles-down fa-2xl"></i></a>
     </div>

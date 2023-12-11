@@ -2,13 +2,15 @@
 
 //NAVBAR//
 
-.start-nav,.login-nav, .overzicht-nav, .detail-nav {
+.start-nav, .login-nav, .overzicht-nav, .detail-nav {
   @include navbarStyle;
 }
-#cart{
-  color:$color-light;
+
+#cart {
+  color: $color-light;
 }
-#cart:hover{
+
+#cart:hover {
   color: $color-primary;
   background-color: transparent;
 }
@@ -17,6 +19,7 @@
 .start-body {
   background: linear-gradient(rgba($color-grey, 0.4), rgba($color-grey, 0.6), rgba($color-grey, 0.8), rgba($color-grey, 1.0)), url("src/assets/phone-bg.jpeg");
   background-size: cover;
+
   .start-header {
     .logo {
       @include flexLayout;
@@ -24,9 +27,11 @@
       color: $color-primary;
       text-decoration: none;
     }
-    .header-banner{
+
+    .header-banner {
       margin-top: 15%;
     }
+
     .header-name {
       font-family: $font-nunito;
       font-size: 50px;
@@ -102,78 +107,90 @@
 //MAIN//
 
 //STARTPAGINA_MAIN//
-.start-main{
+.start-main {
   padding-bottom: 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  .product{
+
+  .product {
     @include textStyles;
-  &-name{
-    font-family: $font-josefinSans;
-    font-size: x-large;
-    font-weight: 700;
-    color: $color-light;
-  }
-  &-pro{
-    width: 40%;
-    height: auto;
-    padding: 20px;
-  }
-  &-price{
-    color: $color-light;
-    font-family: $font-nunito;
-    font-size: x-large;
-    span{
-      text-decoration: line-through;
-      color: $color-secondary;
+
+    &-name {
+      font-family: $font-josefinSans;
+      font-size: x-large;
+      font-weight: 700;
+      color: $color-light;
     }
-  }
+
+    &-pro {
+      width: 40%;
+      height: auto;
+      padding: 20px;
+    }
+
+    &-price {
+      color: $color-light;
+      font-family: $font-nunito;
+      font-size: x-large;
+
+      span {
+        text-decoration: line-through;
+        color: $color-secondary;
+      }
+    }
   }
 }
 
 //OVERZICHT_MAIN
 
-.overzicht-body{
+.overzicht-body {
   background: linear-gradient(rgba($color-grey, 0.8), rgba($color-light, 0.6)), url("src/assets/iphone-bg-2.jpeg");
   background-size: cover;
-  .overzicht-main{
-    .top-overzicht-main{
+
+  .overzicht-main {
+    .top-overzicht-main {
       @include flexLayout;
       @include centerText;
       flex-direction: column;
       margin: 5% 0;
-      .top-overzicht-titel{
+
+      .top-overzicht-titel {
         text-align: center;
         font-family: $font-josefinSans;
         font-size: 50px;
         color: $color-primary;
       }
-      .top-overzicht-text{
+
+      .top-overzicht-text {
         text-align: center;
         font-family: $font-nunito;
         font-size: 30px;
         color: $color-light;
         font-variant: all-small-caps;
       }
-      .filters{
+
+      .filters {
         @include flexLayout;
         width: 100%;
 
         flex-direction: row;
         justify-content: space-evenly;
         margin-top: 10%;
-        .filter-item{
-          .filter{
+
+        .filter-item {
+          .filter {
             border: none;
           }
-          legend{
+
+          legend {
             font-family: $font-josefinSans;
             color: $color-primary;
             font-size: x-large;
 
           }
-          .filter-text{
+
+          .filter-text {
             font-family: $font-nunito;
             color: $color-light;
           }
@@ -182,187 +199,219 @@
 
     }
 
-        .item{
-          width: 30%;
-          height: 25vw;
-          position: relative;
-          overflow: hidden;
-          padding: 5% 0;
-          .item-image{
-            object-fit: contain;
-            padding: 10px 0 5px 0;
-          }
-          .item-overlay{
-            @include overlay;
-            @include flexLayout;
-            flex-direction: column;
-            .product-price{
-              color: $color-light;
-              @include textStyles;
-              font-size: x-large;
-              font-family: $font-nunito;
-              span{
-                color: red;
-              }
-            }
-            .item-overlay-titel{
-              font-family: $font-nunito;
-              font-size: 40px;
-              @include textStyles;
-            }
-            .item-overlay-text{
-              font-family: $font-josefinSans;
-              font-size: 30px;
-              @include textStyles;
-            }
-            .item-overlay-button{
-              .detail-link{
-                text-decoration: none;
-                color: $color-primary;
-              }
-              .detail-link:hover{
-                color: $color-secondary;
-              }
-              @include itemOverlay;
-            }
-          }
-        }
-        .item:hover{
-          .item-overlay{
-            left: 0;
-            transition: left 0.7s;
-          }
+
+  .paginatie {
+    @include flexLayout;
+    justify-content: center;
+    @include fontStyle;
+
+    span {
+      text-decoration: underline;
+    }
+
+  }
+}
+}
+
+  .item {
+    width: 30%;
+    height: 25vw;
+    position: relative;
+    overflow: hidden;
+    padding: 5% 0;
+
+    .item-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 10px 0 5px 0;
+    }
+
+    .item-overlay {
+      @include overlay;
+      @include flexLayout;
+      flex-direction: column;
+
+      .product-price {
+        color: $color-light;
+        @include textStyles;
+        font-size: x-large;
+        font-family: $font-nunito;
+
+        span {
+          color: red;
         }
       }
-      .paginatie{
-        @include flexLayout;
-        justify-content: center;
-       @include fontStyle;
-        span{
-          text-decoration: underline;
+
+      .item-overlay-titel {
+        font-family: $font-nunito;
+        font-size: 40px;
+        @include textStyles;
+      }
+
+      .item-overlay-text {
+        font-family: $font-josefinSans;
+        font-size: 30px;
+        @include textStyles;
+      }
+
+      .item-overlay-button {
+        .detail-link {
+          text-decoration: none;
+          color: $color-primary;
         }
 
+        .detail-link:hover {
+          color: $color-secondary;
+        }
+
+        @include itemOverlay;
       }
     }
+  }
+
+  .item:hover {
+    .item-overlay {
+      left: 0;
+      transition: left 0.7s;
+    }
+  }
+
 
 
 //DETAIL_MAIN//
 
-.detail{
-&-body{
-  background: linear-gradient(rgba($color-grey, 0.4), rgba($color-light, 0.2)), url("src/assets/iphone-bg-2.jpeg");
-  background-size: cover;
-  .detail{
-  &-main{
-    width: 100%;
-    height: 40%;
-    margin: 0 auto;
-    .detail{
-    &-iphone{
-      @include flexLayout;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      background-color: rgba($color-secondary, 0.9);
-      justify-content: center;
-      .detail-img-small{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        img{
-          scale: 70%;
-        }
-      }
-      .detail-img-big{
-        display: flex;
-        justify-content: center;
-        height: 30%;
-        img{
-          scale: 50%;
-        }
-      }
-      .detail-specificaties{
-        display: flex;
-        margin: auto 0;
-        .detail-list{
-          font-family: $font-josefinSans;
-          word-spacing: 2px;
-          .detail-list-item{
-            list-style-type: none;
-            margin-bottom: 3%;
-            h1{
-              color: $color-primary;
+.detail {
+  &-body {
+    background: linear-gradient(rgba($color-grey, 0.4), rgba($color-light, 0.2)), url("src/assets/iphone-bg-2.jpeg");
+    background-size: cover;
+
+    .detail {
+      &-main {
+        width: 100%;
+        height: 40%;
+        margin: 0 auto;
+
+        .detail {
+          &-iphone {
+            @include flexLayout;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background-color: rgba($color-secondary, 0.9);
+            justify-content: center;
+
+            .detail-img-small {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-evenly;
+
+              img {
+                scale: 70%;
+              }
+            }
+
+            .detail-img-big {
+              display: flex;
+              justify-content: center;
+              height: 30%;
+
+              img {
+                scale: 50%;
+              }
+            }
+
+            .detail-specificaties {
+              display: flex;
+              margin: auto 0;
+
+              .detail-list {
+                font-family: $font-josefinSans;
+                word-spacing: 2px;
+
+                .detail-list-item {
+                  list-style-type: none;
+                  margin-bottom: 3%;
+
+                  h1 {
+                    color: $color-primary;
+                  }
+                }
+
+                .detail-list-item-listed {
+                  margin-bottom: 3%;
+                }
+              }
             }
           }
-          .detail-list-item-listed{
-            margin-bottom: 3%;
-          }
+
         }
       }
     }
-
   }
-}
-  }
-}
 }
 
 //LOGIN_MAIN//
 
-.login{
-&-body{
-  background: linear-gradient(rgba($color-grey, 0.4), rgba($color-grey, 0.6), rgba($color-grey, 0.8),rgba($color-grey, 1.0)), url("src/assets/phone-bg.jpeg");
-  background-size: cover;
-  height: 100%;
-  .login-main{
-    .login-profile{
+.login {
+  &-body {
+    background: linear-gradient(rgba($color-grey, 0.4), rgba($color-grey, 0.6), rgba($color-grey, 0.8), rgba($color-grey, 1.0)), url("src/assets/phone-bg.jpeg");
+    background-size: cover;
+    height: 100%;
+
+    .login-main {
+      .login-profile {
         display: flex;
-      justify-content: center;
+        justify-content: center;
 
-      .login-gegevens{
-        padding: 8%;
-        background-color: rgba($color-grey, 0.9);
-        border-radius: 30px;
-        .login-title {
-          font-family: $font-josefinSans;
-          color: $color-primary;
-          font-size: xx-large;
-          margin-bottom: 2%;
-          margin-top: 10%;
-          align-items: center;
-        }
-        .login-text{
-          font-family: $font-nunito;
-          color: $color-light;
-          @include flexLayout;
-          flex-direction: column;
-          padding-bottom: 20%;
+        .login-gegevens {
+          padding: 8%;
+          background-color: rgba($color-grey, 0.9);
+          border-radius: 30px;
 
-          #user-name, #password, #e-mail-confirm{
-            width: 50%;
-            margin-bottom: 5%;
-          }
-          .submit{
-            font-family: $font-nunito;
+          .login-title {
+            font-family: $font-josefinSans;
             color: $color-primary;
-            background-color: $color-light;
-            width: 20%;
-            border: none;
-            padding: 2% 0;
+            font-size: xx-large;
+            margin-bottom: 2%;
+            margin-top: 10%;
+            align-items: center;
+          }
+
+          .login-text {
+            font-family: $font-nunito;
+            color: $color-light;
+            @include flexLayout;
+            flex-direction: column;
+            padding-bottom: 20%;
+
+            #user-name, #password, #e-mail-confirm {
+              width: 50%;
+              margin-bottom: 5%;
+            }
+
+            .submit {
+              font-family: $font-nunito;
+              color: $color-primary;
+              background-color: $color-light;
+              width: 20%;
+              border: none;
+              padding: 2% 0;
+            }
           }
         }
       }
     }
   }
 }
-}
 
 //FOOTER//
-.start-footer{
+.start-footer {
   padding: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  .start-gegevenslijst, .start-adres{
+
+  .start-gegevenslijst, .start-adres {
     font-family: $font-josefinSans;
     font-size: large;
     list-style-type: none;
@@ -372,19 +421,20 @@
 }
 
 //RESPONSIVE//
-@media screen and (min-width: 413px) and (max-width: 415px)  {
-  .start-body{
+@media screen and (min-width: 413px) and (max-width: 415px) {
+  .start-body {
     background: none;
-  .start-header{
-    .header-banner{
-      margin-top: 2%;
+
+    .start-header {
+      .header-banner {
+        margin-top: 2%;
+      }
     }
   }
-  }
-  .login-body{
+  .login-body {
     background: none;
   }
-  }
+}
 
 
 

@@ -2,13 +2,19 @@ import '../scss/main.scss'
 import { createApp } from 'vue'
 import App from './App.vue'
 import{createRouter, createWebHistory} from "vue-router";
-import LogIn from "@/views/LogIn.vue";
+import LogIn from "@/views/LogInView.vue";
+import ProductsView from "@/views/ProductsView.vue";
+import HomeView from "@/views/HomeView.vue";
+import DetailView from "@/views/DetailView.vue";
 
 const app = createApp(App)
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        {path: '/Login', component: LogIn.vue}
+        {path: '/', component: HomeView},
+        {path: '/Login', component: LogIn},
+        {path: '/Products', component: ProductsView},
+        {path: '/DetailView', component: DetailView}
     ]
 })
 

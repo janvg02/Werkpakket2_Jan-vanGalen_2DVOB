@@ -150,55 +150,7 @@
   background-size: cover;
 
   .overzicht-main {
-    .top-overzicht-main {
-      @include flexLayout;
-      @include centerText;
-      flex-direction: column;
-      margin: 5% 0;
 
-      .top-overzicht-titel {
-        text-align: center;
-        font-family: $font-josefinSans;
-        font-size: 50px;
-        color: $color-primary;
-      }
-
-      .top-overzicht-text {
-        text-align: center;
-        font-family: $font-nunito;
-        font-size: 30px;
-        color: $color-light;
-        font-variant: all-small-caps;
-      }
-
-      .filters {
-        @include flexLayout;
-        width: 100%;
-
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin-top: 10%;
-
-        .filter-item {
-          .filter {
-            border: none;
-          }
-
-          legend {
-            font-family: $font-josefinSans;
-            color: $color-primary;
-            font-size: x-large;
-
-          }
-
-          .filter-text {
-            font-family: $font-nunito;
-            color: $color-light;
-          }
-        }
-      }
-
-    }
 
 
   .paginatie {
@@ -283,8 +235,57 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  margin-top: 20%;
 }
+.top-overzicht-main {
+  @include flexLayout;
+  @include centerText;
+  flex-direction: column;
+  margin: 5% 0;
 
+  .top-overzicht-titel {
+    text-align: center;
+    font-family: $font-josefinSans;
+    font-size: 50px;
+    color: $color-primary;
+  }
+
+  .top-overzicht-text {
+    text-align: center;
+    font-family: $font-nunito;
+    font-size: 30px;
+    color: $color-light;
+    font-variant: all-small-caps;
+  }
+
+  .filters {
+    @include flexLayout;
+    width: 100%;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10%;
+
+    .filter-item {
+      .filter {
+        border: none;
+      }
+
+      legend {
+        font-family: $font-josefinSans;
+        color: $color-primary;
+        font-size: x-large;
+
+      }
+
+      .filter-text {
+        font-family: $font-nunito;
+        color: $color-light;
+      }
+    }
+  }
+
+}
 //DETAIL_MAIN//
 
 .detail {

@@ -7,6 +7,7 @@ import FooterComponent from "@/components/FooterComponent.vue";
 import LogInView from "@/views/LogInView.vue";
 import ProductsView from "@/views/ProductsView.vue";
 import DetailView from "@/views/DetailView.vue";
+import PopularProductsComponent from "@/components/PopularProductsComponent.vue";
 export default {
   data() {
 
@@ -17,6 +18,7 @@ export default {
       HeaderComponent,
       FooterComponent,
       CardComponent,
+      PopularProductsComponent,
     LogInView,
     ProductsView,
     DetailView

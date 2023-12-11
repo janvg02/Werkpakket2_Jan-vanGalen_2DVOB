@@ -75,6 +75,8 @@
       outline: none;
       cursor: pointer;
       border-radius: 2px;
+      transition: all .4s ease-in-out;
+
     }
 
     .header-button:hover {
@@ -82,7 +84,6 @@
       color: $color-light;
       border: 1px solid $color-primary;
       border-radius: 2px;
-      transition: all .4s;
     }
 
     .product-main {
@@ -277,7 +278,12 @@
     }
   }
 
-
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
 
 //DETAIL_MAIN//
 

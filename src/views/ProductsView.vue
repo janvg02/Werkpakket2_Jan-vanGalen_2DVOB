@@ -2,8 +2,9 @@
 import CardComponent from "@/components/CardComponent.vue";
 
 export default {
+  components:{CardComponent},
     props: {
-      products: []
+      products: Object
     }
 }
 </script>

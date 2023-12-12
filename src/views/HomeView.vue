@@ -19,7 +19,7 @@ export default defineComponent({
           imageAlt: 'Iphone 15',
           price: 749,
           BTW: 749*0.21,
-          Stock: 5
+          Stock: 10
         },
         {
           id: 2,

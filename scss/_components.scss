@@ -148,13 +148,6 @@
 .overzicht-body {
   background: linear-gradient(rgba($color-grey, 0.8), rgba($color-light, 0.6)), url("src/assets/iphone-bg-2.jpeg");
   background-size: cover;
-
-  .overzicht-main {
-
-
-
-
-}
 }
 
   .item {
@@ -272,6 +265,7 @@
       .filter-text {
         font-family: $font-nunito;
         color: $color-light;
+        padding-bottom: 5%;
       }
     }
   }

@@ -5,7 +5,13 @@ export default {
       OverzichtTitle: 'Ons Assortiment',
       OverzichtSubTitle: 'Telefoons van hoge kwaliteit',
       TitlePrice: 'Prijsklasse',
-      TitleStorage: 'Opslag'
+      TitleStorage: 'Opslag',
+      Price1: 'Minder dan 529',
+      Price2: '529 - 749',
+      Price3: 'Meer dan 749',
+      Storage1: '128 GB',
+      Storage2: '256 GB',
+      Storage3: '512 GB'
     }
   },
 }
@@ -20,13 +26,16 @@ export default {
         <fieldset class="filter">
           <legend>{{TitlePrice}}</legend>
           <div class="filter-text">
-            <input type="checkbox" id="cheap" name="cheap"  />
-            <label for="cheap">529.99 - 749.99</label>
+            <input type="checkbox" id="cheapest" name="cheapest"  />
+            <label for="cheapest">{{ Price1 }}</label>
           </div>
-
+          <div class="filter-text">
+            <input type="checkbox" id="cheap" name="cheap"  />
+            <label for="cheap">{{ Price2 }}</label>
+          </div>
           <div class="filter-text">
             <input type="checkbox" id="expensive" name="expensive" />
-            <label for="expensive">> 749.99</label>
+            <label for="expensive">{{Price3}}</label>
           </div>
         </fieldset>
       </div>
@@ -34,18 +43,17 @@ export default {
         <fieldset class="filter">
           <legend>{{TitleStorage}}</legend>
           <div class="filter-text">
-            <input type="checkbox" id="64" name="64"  />
-            <label for="64">64gb</label>
-          </div>
-
-          <div class="filter-text">
             <input type="checkbox" id="128" name="128" />
-            <label for="128">128gb</label>
+            <label for="128">{{Storage1}}</label>
           </div>
           <div class="filter-text">
             <input type="checkbox" id="256" name="256" />
-            <label for="256">256gb</label>
+            <label for="256">{{Storage2}}</label>
           </div>
+          <div class="filter-text">
+          <input type="checkbox" id="512" name="512"  />
+          <label for="512">{{Storage3}}</label>
+        </div>
         </fieldset>
       </div>
     </div>

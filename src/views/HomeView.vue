@@ -12,7 +12,8 @@ export default defineComponent({
         {
           id: 1,
           title: 'Iphone 15',
-          description:'Apple, 256gb, 5G compatible, 48MP camera, Splash, water and dust resistant.',
+          storage: '256gb',
+          description:'Apple, 5G compatible, 48MP camera, Splash, water and dust resistant.',
           color: 'Pink',
           imageLink: 'src/assets/iphone-15.webp',
           imageAlt: 'Iphone 15',
@@ -23,7 +24,8 @@ export default defineComponent({
         {
           id: 2,
           title: 'Iphone 15 Plus',
-          description:'Apple, 128gb, 5G compatible, 48MP camera, Splash, water and dust resistant.',
+          storage: '128gb',
+          description:'Apple, 5G compatible, 48MP camera, Splash, water and dust resistant.',
           color: 'Black',
           imageLink: 'src/assets/iphone-15-plus.webp',
           imageAlt: 'Iphone 15 Plus',
@@ -34,7 +36,8 @@ export default defineComponent({
         {
           id: 3,
           title: 'Iphone 14',
-          description:'Apple, 256gb, 5G compatible, 48MP camera, Splash, water and dust resistant.',
+          storage: '256gb',
+          description:'Apple, 5G compatible, 48MP camera, Splash, water and dust resistant.',
           color: 'Yellow',
           imageLink: 'src/assets/iphone-14.webp',
           imageAlt: 'Iphone 14',

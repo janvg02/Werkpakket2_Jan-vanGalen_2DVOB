@@ -6,7 +6,7 @@ export default{
   components:{CardComponent},
   props: {
     products: Object
-  }
+  },
 }
 </script>
 

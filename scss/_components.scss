@@ -358,14 +358,8 @@
 }
 
 //LOGIN_MAIN//
-
-.login {
-  &-body {
-    background: linear-gradient(rgba($color-grey, 0.4), rgba($color-grey, 0.6), rgba($color-grey, 0.8), rgba($color-grey, 1.0)), url("src/assets/phone-bg.jpeg");
-    background-size: cover;
-    height: 100%;
-
     .login-main {
+      padding: 5% 0;
       .login-profile {
         display: flex;
         justify-content: center;
@@ -391,7 +385,7 @@
             flex-direction: column;
             padding-bottom: 20%;
 
-            #user-name, #password, #e-mail-confirm {
+            #user-name, #password {
               width: 50%;
               margin-bottom: 5%;
             }
@@ -400,7 +394,7 @@
               font-family: $font-nunito;
               color: $color-primary;
               background-color: $color-light;
-              width: 20%;
+              width: 30%;
               border: none;
               padding: 2% 0;
             }
@@ -408,8 +402,8 @@
         }
       }
     }
-  }
-}
+
+
 
 //FOOTER//
 .start-footer {

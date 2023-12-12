@@ -3,14 +3,13 @@ import productsView from "@/views/ProductsView.vue";
 import CardComponent from "@/components/CardComponent.vue";
 import NavComponent from "@/components/NavComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
-import {defineComponent} from "vue";
 
-export default defineComponent({
+export default {
     components: {productsView,CardComponent,NavComponent,FooterComponent},
   props: {
     product: Object
   },
-})
+}
 </script>
 
 <template>

@@ -1,13 +1,17 @@
 <script>
+import NavComponent from "@/components/NavComponent.vue";
 import {defineComponent} from "vue";
 import productsView from "@/views/ProductsView.vue";
 import CardComponent from "@/components/CardComponent.vue";
-import NavComponent from "@/components/NavComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
 
 export default defineComponent({
-  components: {productsView,CardComponent,NavComponent,FooterComponent},
-
+  components: {NavComponent, productsView,CardComponent,FooterComponent},
+  data(){
+    return{
+      CartButton: 'Add to cart'
+    }
+  }
 })
 </script>
 <template>

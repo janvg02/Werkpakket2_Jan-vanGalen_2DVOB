@@ -6,6 +6,7 @@ import FilterComponent from "@/components/FilterComponent.vue";
 
 export default {
   components: {CardComponent, NavComponent, FooterComponent,FilterComponent},
+
   data() {
   return {
     products: [
@@ -193,7 +194,15 @@ export default {
     MaxItems: 6,
     FirstPage: 1,
     PreviousButton:'Vorige',
-    NextButton:'Volgende'
+    NextButton:'Volgende',
+    startFilters: {
+      cheapest: false,
+      cheap: false,
+      expensive: false,
+      "128": false,
+      "256": false,
+      "512": false,
+    },
   };
 },
 computed: {
@@ -205,6 +214,7 @@ computed: {
   AllPages() {
     return Math.ceil(this.products.length / this.MaxItems);
   },
+
 },
 methods: {
   nextPage() {

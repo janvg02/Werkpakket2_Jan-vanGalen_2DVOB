@@ -2,7 +2,7 @@ import '../scss/main.scss'
 import { createApp } from 'vue'
 import App from './App.vue'
 import{createRouter, createWebHistory} from "vue-router";
-import LogIn from "@/views/LogInView.vue";
+import LogInView from "@/views/LogInView.vue";
 import ProductsView from "@/views/ProductsView.vue";
 import HomeView from "@/views/HomeView.vue";
 import DetailView from "@/views/DetailView.vue";
@@ -16,7 +16,7 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         {path: '/', component: HomeView},
-        {path: '/Login', component: LogIn},
+        {path: '/Login', component: LogInView},
         {path: '/Products', component: ProductsView},
         {path: '/Detail', component: DetailView},
         {path: '/Cart', component: CartView},

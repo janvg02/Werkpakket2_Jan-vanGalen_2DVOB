@@ -7,6 +7,7 @@ import ProductsView from "@/views/ProductsView.vue";
 import HomeView from "@/views/HomeView.vue";
 import DetailView from "@/views/DetailView.vue";
 import CartView from "@/views/CartView.vue";
+import CheckoutView from "@/views/CheckoutView.vue";
 import { createPinia } from 'pinia';
 
 
@@ -18,7 +19,8 @@ const router = createRouter({
         {path: '/Login', component: LogIn},
         {path: '/Products', component: ProductsView},
         {path: '/Detail', component: DetailView},
-        {path: '/Cart', component: CartView}
+        {path: '/Cart', component: CartView},
+        {path: '/Checkout', component: CheckoutView}
     ]
 })
 

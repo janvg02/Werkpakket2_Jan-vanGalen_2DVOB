@@ -7,7 +7,9 @@ export default {
       LoginButton:'Login',
       UserName:'Gebruikersnaam of e-mailadres',
       Password:'Wachtwoord',
-      Loggedin: false
+      Loggedin: false,
+      ConfirmationTitle: 'Geweldig, U bent ingelogd!',
+      ConfirmationText: 'U kan nu producten aan u winkelmandje toevoegen'
     }
   },
   methods: {
@@ -38,9 +40,9 @@ export default {
       </form>
     </div>
     <div class="LogOut" v-else>
-      <h1>Welkom!</h1>
-      <p>Je bent succesvol ingelogd!</p>
-      <button v-on:click="logout()" type="button" class="button button-secondary">{{ LoginButton }}</button>
+      <h1 class="LoginTitle">{{ConfirmationTitle}}</h1>
+      <p class="LoginText">{{ ConfirmationText }}</p>
+      <button v-on:click="logout()" type="button" class="ButtonLogOut">{{ LoginButton }}</button>
     </div>
   </div>
 </template>

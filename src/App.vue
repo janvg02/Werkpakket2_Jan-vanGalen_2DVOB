@@ -8,6 +8,8 @@ import LogInView from "@/views/LogInView.vue";
 import ProductsView from "@/views/ProductsView.vue";
 import DetailView from "@/views/DetailView.vue";
 import PopularProductsComponent from "@/components/PopularProductsComponent.vue";
+import CheckoutView from "@/views/CheckoutView.vue";
+import CartView from "@/views/CartView.vue";
 export default {
   data() {
 
@@ -21,7 +23,9 @@ export default {
       PopularProductsComponent,
     LogInView,
     ProductsView,
-    DetailView
+    DetailView,
+    CartView,
+    CheckoutView
   }
 }
 </script>

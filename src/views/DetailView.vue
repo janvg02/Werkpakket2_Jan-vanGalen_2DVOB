@@ -1,25 +1,15 @@
 <script>
-import ProductsView from "@/views/ProductsView.vue";
+import {defineComponent} from "vue";
+import productsView from "@/views/ProductsView.vue";
 import CardComponent from "@/components/CardComponent.vue";
 import NavComponent from "@/components/NavComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
-export default {
-    components: {ProductsView,CardComponent,NavComponent,FooterComponent},
 
-  data(){
-      return{
-        CartButton: 'Add To Cart',
-        provide(){
+export default defineComponent({
+  components: {productsView,CardComponent,NavComponent,FooterComponent},
 
-        }
-
-    }
-
-  }
-
-}
+})
 </script>
-
 <template>
   <main class="detail-main">
     <div class="detail-iphone">

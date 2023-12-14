@@ -1,5 +1,7 @@
 <script>
+import LogInView from "@/views/LogInView.vue";
 export default {
+components: {LogInView},
   data() {
     return {
       navItems: [

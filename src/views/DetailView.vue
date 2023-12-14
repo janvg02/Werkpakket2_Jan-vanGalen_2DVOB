@@ -1,21 +1,29 @@
 <script>
-import productsView from "@/views/ProductsView.vue";
+import ProductsView from "@/views/ProductsView.vue";
 import CardComponent from "@/components/CardComponent.vue";
 import NavComponent from "@/components/NavComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
-
 export default {
-    components: {productsView,CardComponent,NavComponent,FooterComponent},
-  props: {
-    product: Object
-  },
+    components: {ProductsView,CardComponent,NavComponent,FooterComponent},
+
+  data(){
+      return{
+        CartButton: 'Add To Cart',
+        provide(){
+
+        }
+
+    }
+
+  }
+
 }
 </script>
 
 <template>
   <main class="detail-main">
     <div class="detail-iphone">
-      <div class="detail-img-big">
+      <div class="detail-img-big"                                                                                                                                                                                                                                                                                                                                                                                                               >
         <img :src="product.imageLink" :alt="product.imageAlt">
       </div>
       <div class="detail-specificaties">
@@ -26,6 +34,7 @@ export default {
           <li class="detail-list-item"><h3>{{product.description}}</h3></li>
           <li class="detail-list-item-listed"><p>{{product.storage}}</p></li>
         </ul>
+        <button class="item-overlay-button"><router-link to="/Cart">{{ CartButton }}</router-link></button>
       </div>
     </div>
   </main>

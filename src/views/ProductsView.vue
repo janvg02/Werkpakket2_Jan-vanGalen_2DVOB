@@ -1,11 +1,10 @@
 <script>
 import CardComponent from "@/components/CardComponent.vue";
-import {defineComponent} from "vue";
 import NavComponent from "@/components/NavComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
 import FilterComponent from "@/components/FilterComponent.vue";
 
-export default defineComponent({
+export default {
   components: {CardComponent, NavComponent, FooterComponent,FilterComponent},
   data() {
   return {
@@ -219,7 +218,7 @@ methods: {
     }
   },
 },
-});
+};
 </script>
 
 <template>

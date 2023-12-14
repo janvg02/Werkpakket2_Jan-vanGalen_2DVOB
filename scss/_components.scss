@@ -317,15 +317,6 @@
             background-color: rgba($color-secondary, 0.9);
             justify-content: center;
 
-            .detail-img-small {
-              display: flex;
-              flex-direction: column;
-              justify-content: space-evenly;
-
-              img {
-                scale: 70%;
-              }
-            }
 
             .detail-img-big {
               display: flex;

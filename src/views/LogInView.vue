@@ -32,9 +32,9 @@ export default {
         <div class="login-text">
           <h1 class="login-title">{{LoginTitle}}</h1>
           <label for="user-name">{{UserName}}</label>
-          <input type="text" id="user-name" name="user-name" checked />
+          <input type="email" id="user-name" name="user-name" checked />
           <label for="password">{{Password}}</label>
-          <input type="text" id="password" name="password" checked />
+          <input type="password" id="password" name="password" checked />
           <input class="submit" type="submit" :value=LoginButton>
         </div>
       </form>

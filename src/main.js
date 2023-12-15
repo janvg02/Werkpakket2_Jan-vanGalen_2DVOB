@@ -29,3 +29,4 @@ app.mount('#app')
 
 const pinia = createPinia();
 app.use(pinia)
+

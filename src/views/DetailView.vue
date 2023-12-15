@@ -1,28 +1,25 @@
 <script>
-import NavComponent from "@/components/NavComponent.vue";
-import {defineComponent} from "vue";
-import productsView from "@/views/ProductsView.vue";
 import CardComponent from "@/components/CardComponent.vue";
-import FooterComponent from "@/components/FooterComponent.vue";
 import {inject} from "vue";
 
-export default defineComponent({
-  components: {NavComponent, productsView,CardComponent,FooterComponent},
-  setup(){
-    inject("productsData", products)
-    return{
-      products
-    }
 
+export default {
+  components: {
+    CardComponent
   },
-  data(){
-    return{
-      CartButton: 'Add to cart'
-    }
+  setup() {
+    const products = inject("productsData", []);
+    const CartButton = 'Add to cart';
+
+    return {
+      products,
+      CartButton,
+    };
   }
-})
+}
 </script>
 <template>
+
   <main class="detail-main">
     <div class="detail-iphone">
       <div class="detail-img-big"                                                                                                                                                                                                                                                                                                                                                                                                               >
@@ -30,7 +27,7 @@ export default defineComponent({
       </div>
       <div class="detail-specificaties">
         <ul class="detail-list">
-          <li class="detail-list-item"><h1>{{products.title}}</h1></li>
+          <li class="detail-list-item"><h1 class="detailTitle" v-for="title in products">{{products.title}}</h1></li>
           <li class="detail-list-item"><h2>{{products.price}}</h2></li>
           <li class="detail-list-item"><h2>{{products.BTW}}</h2></li>
           <li class="detail-list-item"><h3>{{products.description}}</h3></li>

@@ -197,12 +197,9 @@ export default {
       },
     ];
     provide("productsData", products);
-
     return{}
   },
-  data() {
 
-  },
   components: {
     HomeView,
       NavComponent,

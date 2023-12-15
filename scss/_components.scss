@@ -299,65 +299,54 @@
 //DETAIL_MAIN//
 
 .detail {
-  &-body {
-    background: linear-gradient(rgba($color-grey, 0.4), rgba($color-light, 0.2)), url("src/assets/iphone-bg-2.jpeg");
-    background-size: cover;
-
-    .detail {
-      &-main {
-        width: 100%;
-        height: 40%;
-        margin: 0 auto;
-
-        .detail {
-          &-iphone {
-            @include flexLayout;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            background-color: rgba($color-secondary, 0.9);
-            justify-content: center;
+  .detail-main {
+    width: 100%;
+    height: 40%;
+    margin: 0 auto;
+     .detail-iphone {
+        @include flexLayout;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background-color: rgba($color-secondary, 0.9);
+        justify-content: center;
 
 
-            .detail-img-big {
-              display: flex;
-              justify-content: center;
-              height: 30%;
+        .detail-img-big {
+          display: flex;
+          justify-content: center;
+          height: 30%;
 
-              img {
-                scale: 50%;
+          img {
+            scale: 50%;
+          }
+        }
+
+        .detail-specificaties {
+          display: flex;
+          margin: auto 0;
+
+          .detail-list {
+            font-family: $font-josefinSans;
+            word-spacing: 2px;
+
+            .detail-list-item {
+              list-style-type: none;
+              margin-bottom: 3%;
+
+              .detailTitle {
+                color: $color-primary;
               }
             }
 
-            .detail-specificaties {
-              display: flex;
-              margin: auto 0;
-
-              .detail-list {
-                font-family: $font-josefinSans;
-                word-spacing: 2px;
-
-                .detail-list-item {
-                  list-style-type: none;
-                  margin-bottom: 3%;
-
-                  h1 {
-                    color: $color-primary;
-                  }
-                }
-
-                .detail-list-item-listed {
-                  margin-bottom: 3%;
-                }
-              }
+            .detail-list-item-listed {
+              margin-bottom: 3%;
             }
           }
-
         }
       }
+
     }
   }
-}
-
 //LOGIN_MAIN//
     .login-main {
       padding: 5% 0;

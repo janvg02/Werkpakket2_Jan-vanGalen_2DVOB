@@ -14,6 +14,9 @@ export default {
       Storage3: '512 GB'
     }
   },
+  methods(){
+
+  }
 }
 </script>
 

@@ -1,0 +1,167 @@
+[
+{
+"id": 1,
+"title": "Iphone 15",
+"storage": 256,
+"description":"Apple, 5G compatible, 48MP camera, Splash, water and dust resistant.",
+"color": "Kleur: Pink",
+"image": "src/assets/iphone-15.webp",
+"price": 749,
+"BTW": "BTW:21%",
+"Stock": 10
+},
+{
+"id": 2,
+"title": "Iphone 15 Plus",
+"storage": 128,
+"description":"Apple, 5G compatible, 48MP camera, Splash, water and dust resistant.",
+"color": "Kleur: Black",
+"image": "src/assets/iphone-15-plus.webp",
+"price":  999,
+"BTW": "BTW: 21%",
+"Stock": 12
+},
+{
+"id": 3,
+"title": "Iphone 14",
+"storage": 256,
+"description":"Apple, 5G compatible, 48MP camera, Splash, water and dust resistant.",
+"color": "Kleur: Yellow",
+"image": "src/assets/iphone-14.webp",
+"price":  749,
+"BTW": "BTW: 21%",
+"Stock": 8
+},
+{
+"id": 4,
+"title": "Iphone 12",
+"storage": 512,
+"description":"Apple, 48MP camera, Splash, water and dust resistant.",
+"image": "src/assets/iphone-12.webp",
+"color": "Kleur: White",
+"price": 649,
+"BTW": "BTW: 21%",
+"Stock": 3
+},
+{
+"id": 5,
+"title": "Iphone 12 Mini",
+"storage": 256,
+"description":"Apple, 48MP camera, Splash, water and dust resistant.",
+"color": "Kleur: Blue",
+"image": "src/assets/iphone-12-mini.webp",
+"price": 599,
+"BTW": "BTW: 21%",
+"Stock": 4
+},
+{
+"id": 6,
+"title":"Iphone 13 Mini",
+"storage": 128,
+"description":"Apple, 5G compatible, 48MP camera, Splash, water and dust resistant.'",
+"color": "Kleur: Midnight",
+"image": "src/assets/iphone-13-mini.webp",
+"price": 649,
+"BTW": "BTW: 21%",
+"Stock": 3
+},
+{
+"id": 7,
+"title": "Iphone 15 Pro Max",
+"storage": 256,
+"description":"Apple, 5G compatible, 48MP camera, Splash, water and dust resistant.",
+"color": "Kleur: Natural Titanium",
+"image": "src/assets/iphone-15-pro-max.webp",
+"price": 1199,
+"BTW": "BTW: 21%",
+"Stock": 1
+},
+{
+"id": 8,
+"title":"Iphone 15 Pro",
+"storage": 128,
+"description":"Apple, 5G compatible, 48MP camera, Splash, water and dust resistant.",
+"color": "Kleur: Black Titanium",
+"image": "src/assets/iphone-15-pro.webp",
+"price": 999,
+"BTW": "BTW: 21%",
+"Stock": 3
+},
+{
+"id": 9,
+"title": "Iphone 14 Plus",
+"storage": 512,
+"description":"Apple, 5G compatible, 48MP camera, Splash, water and dust resistant.",
+"color": "Kleur: Blue",
+"image": "src/assets/iphone-14-plus.png",
+"price": 979,
+"BTW": "BTW: 21%",
+"Stock": 5
+},
+{
+"id": 10,
+"title": "Iphone 13",
+"storage": 128,
+"description":"Apple, 48MP camera, Splash, water and dust resistant.",
+"color": "Kleur: Midnight",
+"image": "src/assets/iphone-13.webp",
+"price":629,
+"BTW": "BTW: 21%",
+"Stock": 2
+},
+{
+"id": 11,
+"title": "Iphone SE (3th Gen)",
+"storage": 128,
+"description":"Apple, 48MP camera, Splash, water and dust resistant.",
+"color": "Kleur: Midnight",
+"image": "src/assets/iphone-se.webp",
+"price": 429,
+"BTW": "BTW: 21%",
+"Stock": 4
+},
+  {
+    "id": 12,
+    "title": "Iphone 14 Pro Max",
+    "storage": 256,
+    "description": "Apple, 5G compatible, 48MP camera, Splash, water and dust resistant.",
+    "color": "Kleur: Deep Purple",
+    "image": "src/assets/iphone-14-pro-max.png",
+    "price": 1099,
+    "BTW": "BTW: 21%",
+    "Stock": 1
+  },
+  {
+    "id": 13,
+    "title": "Iphone 14 Pro",
+    "storage": 128,
+    "description": "Apple, 5G compatible, 48MP camera, Splash, water and dust resistant.",
+    "color": "Kleur: Deep Purple",
+    "image": "src/assets/iphone-14-pro.png",
+    "price": 899,
+    "BTW": "BTW: 21%",
+    "Stock": 6
+  },
+  {
+    "id": 14,
+    "title": "Iphone 14 (RED Edition)",
+    "storage": 128,
+    "description": "Apple, 5G compatible, 48MP camera, Splash, water and dust resistant.",
+    "color": "Kleur: (Product)RED",
+    "image": "src/assets/iphone-14-red.png",
+    "price": 729,
+    "BTW": "BTW: 21%",
+    "Stock": 4
+  },
+  {
+    "id": 15,
+    "title": "Iphone 14 Plus (RED Edition)",
+    "storage": 256,
+    "description": "Apple, 5G compatible, 48MP camera, Splash, water and dust resistant.",
+    "color": "Kleur: (Product)RED",
+    "image": "src/assets/iphone-14-red.png",
+    "price": 929,
+    "BTW": "BTW: 21%",
+    "Stock": 7
+  }
+]

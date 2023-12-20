@@ -1,28 +1,36 @@
 <script>
+import productsList from '@/assets/products.json'
+import { useProductsStore } from '@/Stores/Products.js';
 export default {
  data(){
    return{
-    StorageTitle: 'Opslag (GB): ',
-     DetailButton: 'Details'
+     productsStore: useProductsStore(),
+     products: productsList,
+     StorageTitle: 'Opslag (GB):',
+     DetailButton: 'Details',
+     PriceTitle: '€',
    }
  },
+  computed: {
+    allProducts() {return this.productsStore.getAllProducts()}
+  },
   props: {
-    product: Object
-  }
+  },
 }
 </script>
-
 <template>
-      <div class="item">
-        <div class="item-overlay">
-          <h1 class="item-overlay-titel">{{product.title}}</h1>
-          <button class="item-overlay-button"><router-link to="/Detail">{{ DetailButton }}</router-link></button>
-          <p class="product-price">{{product.price}} </p>
-          <p class="product-price">{{product.color}} </p>
-          <p class="product-price">{{StorageTitle}}{{product.storage}} </p>
-        </div>
-        <img :src="product.imageLink" :alt="product.imageAlt" class="item-image">
-      </div>
+  <div class="item-main">
+    <div class="item" v-for="product in allProducts" :key="product.id">
+    <div class="item-overlay">
+      <h1 class="item-overlay-titel">{{product.title}}</h1>
+      <router-link :to="'/Detail/' + product.id"  class="item-overlay-button" type="button">{{ DetailButton }}</router-link>
+      <p class="product-price">{{PriceTitle}}{{product.price}} </p>
+      <p class="product-price">{{product.color}} </p>
+      <p class="product-price">{{StorageTitle}}{{product.storage}} </p>
+    </div>
+    <img :src="'../' + product.image" :alt="product.title" class="item-image">>
+  </div>
+  </div>
 </template>
 
 <style>

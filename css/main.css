@@ -31,7 +31,7 @@
 }
 
 .start-body {
-  background: linear-gradient(rgba(86, 86, 86, 0.4), rgba(86, 86, 86, 0.6), rgba(86, 86, 86, 0.8), #565656), url("../assets/phone-bg.jpeg");
+  background: linear-gradient(rgba(86, 86, 86, 0.4), rgba(86, 86, 86, 0.6), rgba(86, 86, 86, 0.8), #565656), url("@/assets/phone-bg.jpeg");
   background-size: cover;
 }
 .start-body .start-header .logo {
@@ -140,7 +140,7 @@
 }
 
 .overzicht-body {
-  background: linear-gradient(rgba(86, 86, 86, 0.8), rgba(249, 249, 249, 0.6)), url("../assets/iphone-bg-2.jpeg");
+  background: linear-gradient(rgba(86, 86, 86, 0.8), rgba(249, 249, 249, 0.6)), url("@/assets/iphone-bg-2.jpeg");
   background-size: cover;
 }
 .overzicht-body .overzicht-main .top-overzicht-main {
@@ -282,7 +282,7 @@
 }
 
 .detail-body {
-  background: linear-gradient(rgba(86, 86, 86, 0.4), rgba(249, 249, 249, 0.2)), url("../assets/iphone-bg-2.jpeg");
+  background: linear-gradient(rgba(86, 86, 86, 0.4), rgba(249, 249, 249, 0.2)), url("@/assets/iphone-bg-2.jpeg");
   background-size: cover;
 }
 .detail-body .detail-main {
@@ -335,7 +335,7 @@
 }
 
 .login-body {
-  background: linear-gradient(rgba(86, 86, 86, 0.4), rgba(86, 86, 86, 0.6), rgba(86, 86, 86, 0.8), #565656), url("../assets/phone-bg.jpeg");
+  background: linear-gradient(rgba(86, 86, 86, 0.4), rgba(86, 86, 86, 0.6), rgba(86, 86, 86, 0.8), #565656), url("@/assets/phone-bg.jpeg");
   background-size: cover;
   height: 100%;
 }

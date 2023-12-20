@@ -163,5 +163,60 @@
     "price": 929,
     "BTW": "BTW: 21%",
     "Stock": 7
+  },
+  {
+    "id": 16,
+    "title": "Iphone 8",
+    "storage": 128,
+    "description": "Apple, 48MP camera, Splash, water and dust resistant.",
+    "color": "Kleur: Midnight",
+    "image": "src/assets/iphone-se.webp",
+    "price": 349,
+    "BTW": "BTW: 21%",
+    "Stock": 5
+  },
+  {
+    "id": 17,
+    "title": "Iphone 15 pro",
+    "storage": 512,
+    "description": "Apple, 5G compatible, 48MP camera, Splash, water and dust resistant.",
+    "color": "Kleur: Whit Titanium",
+    "image": "src/assets/iphone-15-pro-white.webp",
+    "price": 1009,
+    "BTW": "BTW: 21%",
+    "Stock": 15
+  },
+  {
+    "id": 18,
+    "title": "Iphone 15",
+    "storage": 256,
+    "description": "Apple, 5G compatible, 48MP camera, Splash, water and dust resistant.",
+    "color": "Kleur: Green",
+    "image": "src/assets/iphone-15-green.webp",
+    "price": 749,
+    "BTW": "BTW: 21%",
+    "Stock": 2
+  },
+  {
+    "id": 19,
+    "title": "Iphone 13",
+    "storage": 256,
+    "description": "Apple, 5G compatible, 48MP camera, Splash, water and dust resistant.",
+    "color": "Kleur: Pink",
+    "image": "src/assets/iphone-13-pink.webp",
+    "price": 679,
+    "BTW": "BTW: 21%",
+    "Stock": 10
+  },
+  {
+    "id": 20,
+    "title": "Iphone 12 (RED Edition)",
+    "storage": 128,
+    "description": "Apple, 48MP camera, Splash, water and dust resistant.",
+    "color": "Kleur: (Product)RED",
+    "image": "src/assets/iphone-12-red.webp",
+    "price": 579,
+    "BTW": "BTW: 21%",
+    "Stock": 1
   }
 ]

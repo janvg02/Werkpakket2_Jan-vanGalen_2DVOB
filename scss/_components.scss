@@ -149,12 +149,13 @@
   background: linear-gradient(rgba($color-grey, 0.8), rgba($color-light, 0.6)), url("@/assets/iphone-bg-2.jpeg");
   background-size: cover;
 }
-.item-main {
+#gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20%;
+}
   .item {
     width: 30%;
     height: 25vw;
@@ -211,7 +212,7 @@
       }
     }
   }
-}
+
 
   .item:hover {
     .item-overlay {
@@ -220,13 +221,7 @@
     }
   }
 
-.gallery{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 20%;
-}
+
 .top-overzicht-main {
   @include flexLayout;
   @include centerText;

@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <div class="item-main">
+  <div id="gallery">
     <div class="item" v-for="product in BestProducts" :key="product.id">
       <div class="item-overlay">
         <h1 class="item-overlay-titel">{{product.title}}</h1>

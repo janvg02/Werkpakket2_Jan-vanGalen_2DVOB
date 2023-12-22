@@ -107,7 +107,7 @@
 "image": "src/assets/iphone-13.webp",
 "price":629,
 "BTW": "BTW: 21%",
-"Stock": 2
+"Stock": 0
 },
 {
 "id": 11,
@@ -129,7 +129,7 @@
     "image": "src/assets/iphone-14-pro-max.png",
     "price": 1099,
     "BTW": "BTW: 21%",
-    "Stock": 1
+    "Stock": 0
   },
   {
     "id": 13,
@@ -217,6 +217,6 @@
     "image": "src/assets/iphone-12-red.webp",
     "price": 579,
     "BTW": "BTW: 21%",
-    "Stock": 1
+    "Stock": 0
   }
 ]

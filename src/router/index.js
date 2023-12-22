@@ -14,8 +14,7 @@ const router = createRouter({
         {path: '/Products', component: ProductsView},
         {path: '/Cart', component: CartView},
         {path: '/Checkout', component: CheckoutView},
-        {path: '/Detail/:id', component: DetailView}
-    ]
+        {path: '/Detail/:id', component: DetailView, name: 'productDetail', props: true}    ]
 })
 
 export default router
